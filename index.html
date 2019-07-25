@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="assets/swiper/swiper.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body class="index-page">
+
+<body>
     <header class="header">
         <div class="center-wrap">
             <a href="" class="logo"></a>
@@ -211,10 +212,12 @@
     <script src="assets/fullpage/jquery.fullPage.min.js"></script>
     <script>
         $(document).ready(function() {
-            $('#fullpage').fullpage({
-                anchors: ['main-screen', 'governor-appeal'],
-                menu: '#navigation',
-            });
+            if (document.documentElement.clientWidth > 1200) {
+                $('#fullpage').fullpage({
+                    anchors: ['main-screen', 'governor-appeal'],
+                    menu: '#navigation',
+                });
+            }
         });
     </script>
     <script src="assets/swiper/swiper.min.js"></script>
