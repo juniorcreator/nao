@@ -17,7 +17,7 @@
 .header {
   top: 20px;
   width: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 1000; }
   .header .center-wrap {
     display: flex;
@@ -511,9 +511,9 @@ section {
     max-width: 470px; } }
 @media (max-height: 600px) {
   .main-screen .main-screen__slide {
-    padding-bottom: 50px; }
+    padding-bottom: 110px; }
   .main-screen .main-screen__footer .main-screen__btn {
-    margin-bottom: 0; }
+    margin-bottom: 30px; }
   .main-screen .main-screen__footer .new-index__list {
     display: none; }
 
@@ -531,14 +531,8 @@ section {
     .governor-appeal .governor-appeal__text .governor-appeal__name span {
       font-size: 12px; } }
 @media (max-height: 500px) {
-  .main-screen .main-screen__slide {
-    padding: 130px 0 20px; }
-
   .main-screen .main-screen__slide .main-screen__title {
     transform: scale(0.78); }
-
-  .main-screen .main-screen__footer .main-screen__btn {
-    display: none; }
 
   .governor-appeal .governor-appeal__text h2 {
     font-size: 20px;
@@ -574,7 +568,9 @@ section {
     justify-content: center; } }
 @media (max-width: 1199.98px) {
   .header {
-    top: 15px; }
+    top: 0px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 0; }
     .header .logo {
       width: 267.3px;
       height: 73.8px; }
@@ -589,20 +585,28 @@ section {
       .header .header-right .header-nav {
         display: none; }
 
-  .main-screen .main-screen__slide {
-    padding-top: 100px; }
-    .main-screen .main-screen__slide .main-screen__title .main-screen__title h1 {
-      font-size: 52px; }
-      .main-screen .main-screen__slide .main-screen__title .main-screen__title h1 span {
-        margin: 8px 0;
-        line-height: 40px;
-        font-size: 40px; }
-    .main-screen .main-screen__slide .main-screen__title .main-screen__title h2 {
-      font-size: 32px;
-      line-height: 36px; }
-    .main-screen .main-screen__slide .main-screen__title .main-screen__title h3 {
-      font-size: 26px;
-      margin-bottom: 20px; } }
+  .main-screen {
+    height: auto;
+    min-height: 100vh; }
+    .main-screen .main-screen__slide {
+      height: 100%;
+      min-height: 100vh;
+      padding-top: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .main-screen .main-screen__slide .main-screen__title .main-screen__title h1 {
+        font-size: 52px; }
+        .main-screen .main-screen__slide .main-screen__title .main-screen__title h1 span {
+          margin: 8px 0;
+          line-height: 40px;
+          font-size: 40px; }
+      .main-screen .main-screen__slide .main-screen__title .main-screen__title h2 {
+        font-size: 32px;
+        line-height: 36px; }
+      .main-screen .main-screen__slide .main-screen__title .main-screen__title h3 {
+        font-size: 26px;
+        margin-bottom: 20px; } }
 @media (max-width: 991.98px) {
   .main-screen .main-screen__slide {
     padding-top: 100px; }
@@ -650,7 +654,7 @@ section {
       font-size: 12px; } }
 @media (max-width: 991.98px) and (max-height: 700px) {
   .main-screen .main-screen__footer .main-screen__btn {
-    margin-bottom: 0; }
+    margin-bottom: 30px; }
   .main-screen .main-screen__footer .new-index__list {
     display: none; } }
 @media (max-width: 991.98px) and (max-height: 600px) {
@@ -673,21 +677,6 @@ section {
 
   .governor-appeal .governor-appeal__img {
     display: none; } }
-@media (max-width: 768.98px) and (max-height: 400px) {
-  .popup-menu-mobile .menu-mobile__wrap {
-    width: 100%; }
-    .popup-menu-mobile .menu-mobile__wrap .menu-mobile__list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-bottom: 20px; }
-      .popup-menu-mobile .menu-mobile__wrap .menu-mobile__list li {
-        padding: 10px 20px;
-        margin-bottom: 0; }
-        .popup-menu-mobile .menu-mobile__wrap .menu-mobile__list li .menu-mobile__link {
-          color: #000; }
-          .popup-menu-mobile .menu-mobile__wrap .menu-mobile__list li .menu-mobile__link:hover {
-            text-decoration: underline; } }
 @media (max-width: 550.98px) {
   .header .logo {
     height: 65px;
@@ -704,12 +693,13 @@ section {
     left: auto;
     right: 0; }
   .main-screen .main-screen__slide {
-    padding-bottom: 80px; }
+    padding-bottom: 100px; }
     .main-screen .main-screen__slide .center-wrap {
       align-items: center;
       justify-content: center; }
     .main-screen .main-screen__slide .main-screen__title {
-      max-width: 210px; }
+      max-width: 100%;
+      padding: 0 10px; }
       .main-screen .main-screen__slide .main-screen__title h1 {
         font-size: 30px; }
         .main-screen .main-screen__slide .main-screen__title h1 span {

@@ -6,6 +6,7 @@ $(document).ready(function () {
         speed: 500,
         loop: true,
         effect: 'fade',
+        autoHeight: true,
 
         autoplay: {
             delay: 8000,
@@ -18,11 +19,6 @@ $(document).ready(function () {
     })
 });
 
-//$(document).ready(function () {
-//        if ($('.governor-appeal').hasClass('.active')) {
-//            $('.header').addClass('header-scroll');
-//        }
-//});
 
 document.addEventListener('wheel', function () {
     if (document.querySelector('section.governor-appeal').classList.contains('active')) {
