@@ -120,25 +120,6 @@
                     background-repeat: no-repeat;
                     position: relative;
 
-                    //                    &::before {
-                    //                        content: "";
-                    //                        position: absolute;
-                    //                        z-index: -1;
-                    //                        background: #000;
-                    //                        width: 25px;
-                    //                        height: 25px;
-                    //                        top: calc((100% - 25px) / 2);
-                    //                        left: calc((100% - 25px) / 2);
-                    //                        opacity: 0;
-                    //                        transition: 0.5s;
-                    //                        border-radius: 3px;
-                    //                    }
-                    //
-                    //                    &:hover::before {
-                    //                        opacity: 1;
-                    //                    }
-
-
                     &:last-of-type {
                         margin-right: 0;
                     }
@@ -423,23 +404,23 @@ section {
     }
 
     .first-screen {
-        background-image: url(../img/NAO_slide_1-1_v1.webp);
+        background-image: url(../img/NAO_slide_1-1_v1.jpg);
     }
 
     .tourism {
-        background-image: url(../img/NAO_slide_1-5_v1.webp);
+        background-image: url(../img/NAO_slide_1-5_v1.jpg);
     }
 
     .culture {
-        background-image: url(../img/NAO_slide_1-4_v1.webp);
+        background-image: url(../img/NAO_slide_1-4_v1.jpg);
     }
 
     .production {
-        background-image: url(../img/NAO_slide_1-3_v1.webp);
+        background-image: url(../img/NAO_slide_1-3_v1.jpg);
     }
 
     .arctic {
-        background-image: url(../img/NAO_slide_1-2_v1.webp);
+        background-image: url(../img/NAO_slide_1-2_v1.jpg);
 
     }
 }
@@ -621,7 +602,7 @@ section {
 .governor-appeal {
     height: 100vh;
     position: relative;
-    background-image: url(../img/governor-appeal__bg.webp);
+    background-image: url(../img/governor-appeal__bg.png);
 
     .center-wrap {
         display: flex;
@@ -631,7 +612,7 @@ section {
 
     .governor-appeal__img {
         margin-top: auto;
-        background-image: url(../img/governor-appeal__img.webp);
+        background-image: url(../img/governor-appeal__img.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
