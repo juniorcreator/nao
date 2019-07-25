@@ -118,6 +118,25 @@
                     width: 23px;
                     background-size: contain;
                     background-repeat: no-repeat;
+                    position: relative;
+
+                    //                    &::before {
+                    //                        content: "";
+                    //                        position: absolute;
+                    //                        z-index: -1;
+                    //                        background: #000;
+                    //                        width: 25px;
+                    //                        height: 25px;
+                    //                        top: calc((100% - 25px) / 2);
+                    //                        left: calc((100% - 25px) / 2);
+                    //                        opacity: 0;
+                    //                        transition: 0.5s;
+                    //                        border-radius: 3px;
+                    //                    }
+                    //
+                    //                    &:hover::before {
+                    //                        opacity: 1;
+                    //                    }
 
 
                     &:last-of-type {
@@ -182,20 +201,40 @@
             .header__list {
                 display: flex;
                 justify-content: space-between;
+                align-items: flex-start;
 
                 li {
                     margin-right: 15px;
-                    max-width: 110px;
 
                     &:last-of-type {
                         margin-right: 0;
                     }
 
+
                     .header__link {
+                        display: block;
+                        width: 100%;
                         font-weight: 400;
                         font-size: 11.5px;
                         line-height: 11.5px;
                         color: #fff;
+                        position: relative;
+
+                        &::before {
+                            position: absolute;
+                            bottom: -5px;
+                            left: 0;
+                            content: "";
+                            width: 100%;
+                            height: 2px;
+                            background: #fff;
+                            opacity: 0;
+                            transition: 0.5s;
+                        }
+
+                        &:hover::before {
+                            opacity: 1;
+                        }
                     }
                 }
             }
@@ -210,6 +249,10 @@
 
     .header-right .header-nav .header__list li .header__link {
         color: #000;
+
+        &::before {
+            background: #000;
+        }
     }
 
     .header-right .menu-open {
@@ -271,6 +314,11 @@ section {
         height: 60px;
         width: 36px;
         background-size: contain;
+        transition: 0.5s;
+
+        &:hover {
+            opacity: 0.6;
+        }
     }
 
     .swiper-button-prev {
@@ -342,6 +390,10 @@ section {
             color: #fff;
             margin-left: calc((100% + 13px) / 3);
             margin-bottom: 79px;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
 
         .new-index__list {
@@ -354,6 +406,10 @@ section {
                 width: calc((100% - 30px) / 3);
                 font-size: 14.5px;
                 color: #fff;
+
+                &:hover {
+                    text-decoration: underline;
+                }
 
                 .new-index__item-time {
                     margin-bottom: 10px;
@@ -827,6 +883,32 @@ section {
     .main-screen .main-screen__slide .main-screen__title {
         transform: scale(0.65);
     }
+
+    .governor-appeal {
+        .governor-appeal__img {
+            display: none;
+        }
+
+        .governor-appeal__text {
+            margin-left: 0px !important;
+
+            h2 {
+                font-size: 15px !important;
+                margin-bottom: 10px !important;
+            }
+
+            p {
+                font-size: 12px !important;
+                margin-bottom: 6px !important;
+            }
+
+            .governor-appeal__name {
+                span {
+                    font-size: 10px !important;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 1199.98px) and (min-height: 1000px) {
@@ -1010,7 +1092,6 @@ section {
     }
 }
 
-
 @media (max-width: 767.98px) {
     .header {
         .header-right {
@@ -1045,34 +1126,12 @@ section {
         .governor-appeal__img {
             display: none;
         }
-
-
     }
 
 }
 
 @media (max-width: 768.98px) and (max-height: 400px) {
-    .governor-appeal {
-        .governor-appeal__text {
-            margin-left: 0px;
 
-            h2 {
-                font-size: 15px;
-                margin-bottom: 10px;
-            }
-
-            p {
-                font-size: 12px;
-                margin-bottom: 6px;
-            }
-
-            .governor-appeal__name {
-                span {
-                    font-size: 10px;
-                }
-            }
-        }
-    }
 
     .popup-menu-mobile {
         .menu-mobile__wrap {

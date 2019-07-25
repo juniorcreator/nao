@@ -24,6 +24,14 @@ $(document).ready(function () {
 //        }
 //});
 
+document.addEventListener('wheel', function () {
+    if (document.querySelector('section.governor-appeal').classList.contains('active')) {
+        document.querySelector('header').classList.add('header-scroll');
+    } else {
+        document.querySelector('header').classList.remove('header-scroll');
+    }
+});
+
 $('.menu-open--js').click(function () {
     $(".popup-menu-mobile").fadeToggle(100);
 });
@@ -31,4 +39,3 @@ $('.menu-open--js').click(function () {
 $('.menu-mobile--close').click(function () {
     $('.popup-menu-mobile').fadeOut();
 });
-

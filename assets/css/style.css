@@ -96,7 +96,8 @@
           height: 23px;
           width: 23px;
           background-size: contain;
-          background-repeat: no-repeat; }
+          background-repeat: no-repeat;
+          position: relative; }
           .header .header-right .header-right__top .header-social__list .header-social__link:last-of-type {
             margin-right: 0; }
           .header .header-right .header-right__top .header-social__list .header-social__link:nth-of-type(1) {
@@ -134,22 +135,39 @@
       width: 100%; }
       .header .header-right .header-nav .header__list {
         display: flex;
-        justify-content: space-between; }
+        justify-content: space-between;
+        align-items: flex-start; }
         .header .header-right .header-nav .header__list li {
-          margin-right: 15px;
-          max-width: 110px; }
+          margin-right: 15px; }
           .header .header-right .header-nav .header__list li:last-of-type {
             margin-right: 0; }
           .header .header-right .header-nav .header__list li .header__link {
+            display: block;
+            width: 100%;
             font-weight: 400;
             font-size: 11.5px;
             line-height: 11.5px;
-            color: #fff; }
+            color: #fff;
+            position: relative; }
+            .header .header-right .header-nav .header__list li .header__link::before {
+              position: absolute;
+              bottom: -5px;
+              left: 0;
+              content: "";
+              width: 100%;
+              height: 2px;
+              background: #fff;
+              opacity: 0;
+              transition: 0.5s; }
+            .header .header-right .header-nav .header__list li .header__link:hover::before {
+              opacity: 1; }
 
 .header.header-scroll .logo {
   background-image: url(../img/black-NAO_icon-1-6_logo.svg); }
 .header.header-scroll .header-right .header-nav .header__list li .header__link {
   color: #000; }
+  .header.header-scroll .header-right .header-nav .header__list li .header__link::before {
+    background: #000; }
 .header.header-scroll .header-right .menu-open {
   background-image: url(../img/black-menu.svg); }
 .header.header-scroll .header-right .header-right__top .header-search {
@@ -184,7 +202,11 @@ section {
     background-image: url(../img/NAO_icon-1-5.svg) !important;
     height: 60px;
     width: 36px;
-    background-size: contain; }
+    background-size: contain;
+    transition: 0.5s; }
+    .main-screen .swiper-button-prev:hover,
+    .main-screen .swiper-button-next:hover {
+      opacity: 0.6; }
   .main-screen .swiper-button-prev {
     transform: rotate(180deg); }
   .main-screen .main-screen__slide {
@@ -237,6 +259,8 @@ section {
       color: #fff;
       margin-left: calc((100% + 13px) / 3);
       margin-bottom: 79px; }
+      .main-screen .main-screen__footer .main-screen__btn:hover {
+        text-decoration: underline; }
     .main-screen .main-screen__footer .new-index__list {
       display: flex;
       justify-content: space-between; }
@@ -246,6 +270,8 @@ section {
         width: calc((100% - 30px) / 3);
         font-size: 14.5px;
         color: #fff; }
+        .main-screen .main-screen__footer .new-index__list .new-index__item:hover {
+          text-decoration: underline; }
         .main-screen .main-screen__footer .new-index__list .new-index__item .new-index__item-time {
           margin-bottom: 10px; }
         .main-screen .main-screen__footer .new-index__list .new-index__item .new-index__item-text {
@@ -531,7 +557,20 @@ section {
     max-height: 60px; }
 
   .main-screen .main-screen__slide .main-screen__title {
-    transform: scale(0.65); } }
+    transform: scale(0.65); }
+
+  .governor-appeal .governor-appeal__img {
+    display: none; }
+  .governor-appeal .governor-appeal__text {
+    margin-left: 0px !important; }
+    .governor-appeal .governor-appeal__text h2 {
+      font-size: 15px !important;
+      margin-bottom: 10px !important; }
+    .governor-appeal .governor-appeal__text p {
+      font-size: 12px !important;
+      margin-bottom: 6px !important; }
+    .governor-appeal .governor-appeal__text .governor-appeal__name span {
+      font-size: 10px !important; } }
 @media (max-width: 1199.98px) and (min-height: 1000px) {
   .main-screen .main-screen__slide .center-wrap {
     justify-content: center; } }
@@ -637,17 +676,6 @@ section {
   .governor-appeal .governor-appeal__img {
     display: none; } }
 @media (max-width: 768.98px) and (max-height: 400px) {
-  .governor-appeal .governor-appeal__text {
-    margin-left: 0px; }
-    .governor-appeal .governor-appeal__text h2 {
-      font-size: 15px;
-      margin-bottom: 10px; }
-    .governor-appeal .governor-appeal__text p {
-      font-size: 12px;
-      margin-bottom: 6px; }
-    .governor-appeal .governor-appeal__text .governor-appeal__name span {
-      font-size: 10px; }
-
   .popup-menu-mobile .menu-mobile__wrap {
     width: 100%; }
     .popup-menu-mobile .menu-mobile__wrap .menu-mobile__list {
