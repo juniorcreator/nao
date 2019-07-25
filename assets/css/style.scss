@@ -655,7 +655,7 @@ section {
 @media (max-height: 900px) {
     .main-screen {
         .main-screen__slide {
-            padding: 150px 0 170px;
+            padding: 140px 0 190px;
 
             .center-wrap {
                 justify-content: center;
@@ -777,7 +777,7 @@ section {
     }
 }
 
-@media (max-height: 600px) {
+@media (min-width: 1199.98px) and (max-height: 600px) {
     .main-screen {
         .main-screen__slide {
             padding-bottom: 110px;
@@ -822,7 +822,7 @@ section {
     }
 }
 
-@media (max-height: 500px) {
+@media (min-width: 1199.98px) and (max-height: 500px) {
 
 
     .main-screen .main-screen__slide .main-screen__title {
@@ -844,7 +844,7 @@ section {
     }
 }
 
-@media (max-height: 400px) {
+@media (min-width: 1199.98px) and (max-height: 400px) {
     .header .logo {
         max-width: 200px;
         max-height: 60px;
@@ -965,13 +965,17 @@ section {
             }
         }
     }
+    .governor-appeal {
+        min-height: 100vh;
+        height: auto;
+    }
 }
 
 @media (max-width: 991.98px) {
 
     .main-screen {
         .main-screen__slide {
-            padding-top: 100px;
+            padding-top: 120px;
 
             .center-wrap {
                 align-items: center;
@@ -1068,13 +1072,6 @@ section {
     }
 }
 
-@media (max-width: 991.98px) and (max-height: 600px) {
-    .governor-appeal {
-        .governor-appeal__img {
-            display: none;
-        }
-    }
-}
 
 @media (max-width: 767.98px) {
     .header {
@@ -1093,6 +1090,9 @@ section {
     }
 
     .main-screen {
+        .main-screen__title {
+            padding: 0 20px;
+        }
         .main-screen__footer {
             .main-screen__btn {
                 padding: 10px 20px;
@@ -1106,9 +1106,17 @@ section {
     }
 
     .governor-appeal {
+        padding: 50px 0 30px;
+        .center-wrap {
+            align-items: center;
+            flex-direction: column;
+        }
+        .governor-appeal__text { 
+            padding: 20px 0;
+        }
 
         .governor-appeal__img {
-            display: none;
+            min-height: 250px;
         }
     }
 
@@ -1189,6 +1197,9 @@ section {
     }
 
     .governor-appeal {
+        .governor-appeal__img {
+            max-height: 250px;
+        }
         .governor-appeal__text {
             margin-left: 0px;
 

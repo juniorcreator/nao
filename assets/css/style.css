@@ -450,7 +450,7 @@ section {
 
 @media (max-height: 900px) {
   .main-screen .main-screen__slide {
-    padding: 150px 0 170px; }
+    padding: 140px 0 190px; }
     .main-screen .main-screen__slide .center-wrap {
       justify-content: center; }
     .main-screen .main-screen__slide .main-screen__title h1 {
@@ -509,7 +509,7 @@ section {
 @media (max-height: 700px) {
   .governor-appeal .governor-appeal__img {
     max-width: 470px; } }
-@media (max-height: 600px) {
+@media (min-width: 1199.98px) and (max-height: 600px) {
   .main-screen .main-screen__slide {
     padding-bottom: 110px; }
   .main-screen .main-screen__footer .main-screen__btn {
@@ -530,7 +530,7 @@ section {
       margin-bottom: 10px; }
     .governor-appeal .governor-appeal__text .governor-appeal__name span {
       font-size: 12px; } }
-@media (max-height: 500px) {
+@media (min-width: 1199.98px) and (max-height: 500px) {
   .main-screen .main-screen__slide .main-screen__title {
     transform: scale(0.78); }
 
@@ -540,7 +540,7 @@ section {
   .governor-appeal .governor-appeal__text p {
     font-size: 15px;
     margin-bottom: 10px; } }
-@media (max-height: 400px) {
+@media (min-width: 1199.98px) and (max-height: 400px) {
   .header .logo {
     max-width: 200px;
     max-height: 60px; }
@@ -606,10 +606,14 @@ section {
         line-height: 36px; }
       .main-screen .main-screen__slide .main-screen__title .main-screen__title h3 {
         font-size: 26px;
-        margin-bottom: 20px; } }
+        margin-bottom: 20px; }
+
+  .governor-appeal {
+    min-height: 100vh;
+    height: auto; } }
 @media (max-width: 991.98px) {
   .main-screen .main-screen__slide {
-    padding-top: 100px; }
+    padding-top: 120px; }
     .main-screen .main-screen__slide .center-wrap {
       align-items: center;
       justify-content: center; }
@@ -657,9 +661,6 @@ section {
     margin-bottom: 30px; }
   .main-screen .main-screen__footer .new-index__list {
     display: none; } }
-@media (max-width: 991.98px) and (max-height: 600px) {
-  .governor-appeal .governor-appeal__img {
-    display: none; } }
 @media (max-width: 767.98px) {
   .header .header-right {
     max-width: 30px;
@@ -669,14 +670,23 @@ section {
     .header .header-right .header-right__top {
       display: none; }
 
+  .main-screen .main-screen__title {
+    padding: 0 20px; }
   .main-screen .main-screen__footer .main-screen__btn {
     padding: 10px 20px;
     font-size: 18px; }
   .main-screen .main-screen__footer .new-index__list {
     display: none; }
 
-  .governor-appeal .governor-appeal__img {
-    display: none; } }
+  .governor-appeal {
+    padding: 50px 0 30px; }
+    .governor-appeal .center-wrap {
+      align-items: center;
+      flex-direction: column; }
+    .governor-appeal .governor-appeal__text {
+      padding: 20px 0; }
+    .governor-appeal .governor-appeal__img {
+      min-height: 250px; } }
 @media (max-width: 550.98px) {
   .header .logo {
     height: 65px;
@@ -717,6 +727,8 @@ section {
     font-size: 16px;
     line-height: 16px; }
 
+  .governor-appeal .governor-appeal__img {
+    max-height: 250px; }
   .governor-appeal .governor-appeal__text {
     margin-left: 0px; }
     .governor-appeal .governor-appeal__text h2 {
