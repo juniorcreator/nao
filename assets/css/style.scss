@@ -423,23 +423,23 @@ section {
     }
 
     .first-screen {
-        background-image: url(../img/NAO_slide_1-1_v1.jpg);
+        background-image: url(../img/NAO_slide_1-1_v1.webp);
     }
 
     .tourism {
-        background-image: url(../img/NAO_slide_1-5_v1.jpg);
+        background-image: url(../img/NAO_slide_1-5_v1.webp);
     }
 
     .culture {
-        background-image: url(../img/NAO_slide_1-4_v1.jpg);
+        background-image: url(../img/NAO_slide_1-4_v1.webp);
     }
 
     .production {
-        background-image: url(../img/NAO_slide_1-3_v1.jpg);
+        background-image: url(../img/NAO_slide_1-3_v1.webp);
     }
 
     .arctic {
-        background-image: url(../img/NAO_slide_1-2_v1.jpg);
+        background-image: url(../img/NAO_slide_1-2_v1.webp);
 
     }
 }
@@ -621,7 +621,7 @@ section {
 .governor-appeal {
     height: 100vh;
     position: relative;
-    background-image: url(../img/governor-appeal__bg.png);
+    background-image: url(../img/governor-appeal__bg.webp);
 
     .center-wrap {
         display: flex;
@@ -631,7 +631,7 @@ section {
 
     .governor-appeal__img {
         margin-top: auto;
-        background-image: url(../img/governor-appeal__img.png);
+        background-image: url(../img/governor-appeal__img.webp);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
@@ -771,13 +771,16 @@ section {
 }
 
 @media (min-height: 1000px) {
-    .governor-appeal {
+    .main-screen {
 
-        .header {
+        .main-screen__slide {
             .center-wrap {
-                align-items: flex-end;
+                justify-content: center;
             }
         }
+    }
+
+    .governor-appeal {
 
         .governor-appeal__img {
             margin-top: 0;
