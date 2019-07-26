@@ -900,7 +900,7 @@ section {
     .header {
         top: 0px;
         background: rgba(0, 0, 0, 0.7);
-        padding: 15px 0;
+        padding: 10px 0 15px;
 
         .logo {
             width: 267.3px;
@@ -965,8 +965,8 @@ section {
             }
         }
     }
+
     .governor-appeal {
-        min-height: 100vh;
         height: auto;
     }
 }
@@ -1093,6 +1093,7 @@ section {
         .main-screen__title {
             padding: 0 20px;
         }
+
         .main-screen__footer {
             .main-screen__btn {
                 padding: 10px 20px;
@@ -1107,11 +1108,13 @@ section {
 
     .governor-appeal {
         padding: 50px 0 30px;
+
         .center-wrap {
             align-items: center;
             flex-direction: column;
         }
-        .governor-appeal__text { 
+
+        .governor-appeal__text {
             padding: 20px 0;
         }
 
@@ -1128,12 +1131,15 @@ section {
     .header {
         .logo {
             height: 65px;
-            max-width: 220px;
+            max-width: 1970px;
         }
 
         .header-right {
+            height: 65px;
+            justify-content: center;
+
             .menu-open {
-                margin-bottom: 10px;
+                margin-bottom: 0px;
             }
         }
     }
@@ -1198,8 +1204,10 @@ section {
 
     .governor-appeal {
         .governor-appeal__img {
+            background-position: left;
             max-height: 250px;
         }
+
         .governor-appeal__text {
             margin-left: 0px;
 
