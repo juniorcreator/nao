@@ -1,3 +1,36 @@
+var ttvVisible = function () {
+    var target = document.querySelector('[data-anchor="governor-appeal"]');
+    // Все позиции элемента
+    var targetPosition = {
+        top: window.pageYOffset + target.getBoundingClientRect().top,
+        bottom: window.pageYOffset + target.getBoundingClientRect().bottom
+    };
+    if (
+        window.pageYOffset + document.querySelector('body > header').offsetHeight > targetPosition.top &&
+        window.pageYOffset + document.querySelector('body > header').offsetHeight < targetPosition.bottom
+    ) {
+        return true;
+    } else {
+        return false;
+    };
+};
+
+document.addEventListener('scroll', addGubernatorClass);
+
+function addGubernatorClass() {
+    setTimeout(checkClass(), 500);
+}
+
+function checkClass() {
+    if (ttvVisible()) {
+        document.querySelector('body').classList.add('fp-viewing-governor-appeal');
+        document.querySelector('header').classList.add('header-scroll');
+    } else {
+        document.querySelector('body').classList.remove('fp-viewing-governor-appeal');
+        document.querySelector('header').classList.add('header-scroll');
+    }
+}
+
 $(document).ready(function () {
     var mySwiper1 = new Swiper('.main-screen .swiper-container', {
         slidesPerView: 1,
@@ -20,13 +53,14 @@ $(document).ready(function () {
 });
 
 
-document.addEventListener('wheel', function () {
-    if (document.querySelector('section.governor-appeal').classList.contains('active')) {
-        document.querySelector('header').classList.add('header-scroll');
-    } else {
-        document.querySelector('header').classList.remove('header-scroll');
-    }
-});
+//document.addEventListener('wheel', function () {
+//    if (document.querySelector('section.governor-appeal').classList.contains('active')) {
+//        document.querySelector('header').classList.add('header-scroll');
+//    } else {
+//        document.querySelector('header').classList.add('header-scroll');
+//document.querySelector('header').classList.add('header-scroll');
+//    }
+//});
 
 $('.menu-open--js').click(function () {
     $(".popup-menu-mobile").fadeToggle(100);
