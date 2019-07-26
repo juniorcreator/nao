@@ -15,14 +15,10 @@ var ttvVisible = function () {
     };
 };
 
-document.addEventListener('scroll', addGubernatorClass);
-
-function addGubernatorClass() {
-    setTimeout(checkClass(), 500);
-}
+window.addEventListener('hashchange', checkClass);
 
 function checkClass() {
-    if (ttvVisible()) {
+    if (!ttvVisible()) {
         document.querySelector('body').classList.add('fp-viewing-governor-appeal');
         $('header').toggleClass('header-scroll');
     } else {
