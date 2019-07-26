@@ -24,10 +24,10 @@ function addGubernatorClass() {
 function checkClass() {
     if (ttvVisible()) {
         document.querySelector('body').classList.add('fp-viewing-governor-appeal');
-        document.querySelector('header').classList.add('header-scroll');
+        $('header').toggleClass('header-scroll');
     } else {
         document.querySelector('body').classList.remove('fp-viewing-governor-appeal');
-        document.querySelector('header').classList.add('header-scroll');
+         $('header').toggleClass('header-scroll');
     }
 }
 
@@ -51,16 +51,6 @@ $(document).ready(function () {
         },
     })
 });
-
-
-//document.addEventListener('wheel', function () {
-//    if (document.querySelector('section.governor-appeal').classList.contains('active')) {
-//        document.querySelector('header').classList.add('header-scroll');
-//    } else {
-//        document.querySelector('header').classList.add('header-scroll');
-//document.querySelector('header').classList.add('header-scroll');
-//    }
-//});
 
 $('.menu-open--js').click(function () {
     $(".popup-menu-mobile").fadeToggle(100);
