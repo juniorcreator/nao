@@ -514,12 +514,12 @@ section {
     width: 100%; }
     .governor-appeal .governor-appeal__text h2 {
       text-transform: uppercase;
-      font-weight: 500;
+      font-weight: 400;
       font-size: 35px;
       color: #000;
       margin-bottom: 55px; }
     .governor-appeal .governor-appeal__text p {
-      font-weight: 500;
+      font-weight: 400;
       font-size: 16.6px;
       color: #000;
       margin-bottom: 22px; }
