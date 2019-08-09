@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
+
 <body>
     <header class="header">
         <div class="center-wrap">
@@ -165,6 +166,18 @@
                 </div>
             </div>
         </section>
+        <section data-anchor="governor-reasons" class="governor-appeal section">
+            <div class="center-wrap">
+                <div class="governor-appeal__img"></div>
+                <div class="governor-appeal__text">
+                    <h2>Обращение <br> губернатора tttttttttttttt</h2>
+                    <p>Уважаемые инвесторы и партнеры!</p>
+                    <p>Ненецкий автономный округ – регион с богатейшим природным потенциалом и стремительно развивающейся экономикой.</p>
+                    <p>На территории округа открыты запасы углеводородного сырья, превосходящие весь ресурсный потенциал Западной Европы. Хорошая изученность месторождений нефти и газа, их компактное расположение и близость к европейским рынкам сбыта открывают уникальные перспективы для инвестирования в нефтегазовую отрасль. Большая часть ресурсных запасов – малые и средние месторождения, предоставляющие отличные возможности для малых нефтедобывающих компаний.</p>
+                    <p class="governor-appeal__name">Цыбульский <br> Александр Витальевич <span>Губернатор Ненецкого автономного округа</span></p>
+                </div>
+            </div>
+        </section>
     </main>
     <div class="popup-menu-mobile">
         <div class="menu-mobile">
@@ -206,6 +219,17 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="assets/fullpage/jquery.easings.min.js"></script>
     <script src="assets/fullpage/scrolloverflow.min.js"></script>
@@ -214,7 +238,7 @@
         $(document).ready(function() {
             if (document.documentElement.clientHeight > 650) {
                 $('#fullpage').fullpage({
-                    anchors: ['main-screen', 'governor-appeal'],
+                    anchors: ['main-screen', 'governor-appeal','governor-reasons'],
                     menu: '#navigation',
                 });
             }
