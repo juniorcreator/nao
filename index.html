@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
+
 <body>
     <header class="header">
         <div class="center-wrap">
@@ -165,7 +166,132 @@
                 </div>
             </div>
         </section>
-          <section data-anchor="" class="block section">
+        <section data-anchor="governor-reasons" class="governor-appeal governor-appeal--third section">
+            <div class="center-wrap">
+                <div class="governor-appeal__text">
+                    <h2>Причины инвестировать <br>в Ненецкий автономный округ
+                    </h2>
+                </div>
+                <div class="prop">
+                    <div class="prop__item">
+                        <img src="assets/img/sl3/1.png" alt="item">
+                        <p >
+                            Углеводородное
+                            сырье
+                        </p>
+                    </div>
+                    <div class="prop__item">
+                        <img src="assets/img/sl3/2.png" alt="item">
+                        <p >
+                            Арктика
+                        </p>
+                    </div>
+                    <div class="prop__item">
+                        <img src="assets/img/sl3/3.png" alt="item">
+                        <p >
+                            Северный
+                            морской путь
+                        </p>
+                    </div>
+                    <div class="prop__item">
+                        <img src="assets/img/sl3/4.png" alt="item">
+                        <p>
+                            Арктический
+                            туризм
+                        </p>
+                    </div>
+                    <div class="prop__item">
+                        <img src="assets/img/sl3/5.png" alt="item">
+                        <p>
+                            Биологические
+                            ресурсы
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-anchor="governor-news" class="governor-appeal s-news section">
+            <div class="center-wrap">
+                <div class="news">
+                    <div class="news__top">
+                        <p class="news__title">Новости </p>
+                        <a href="#" class="news__all-news">Все новости</a>
+                    </div>
+
+
+                    <div class="news__item">
+                       <div class="news__left">
+                           <div class="news__date">
+                               12 Апреля
+                               2019
+                           </div>
+                       </div>
+                       <div class="news__mid">
+                           <p class="news__news-title">В НЕНЕЦКОМ АВТОНОМНОМ ОКРУГЕ СОЗДАН IT-КЛАСТЕР
+                           </p>
+                           <p class="news__news-text">
+                               Региональные предприниматели, работающие в сфере
+                               информационных технологий, подписали соглашение
+                               об участии в деятельности IT-кластера Ненецкого округа.
+                               Напомним, в конце марта этого года глава региона
+                               Александр Цыбульский утвердил...
+                           </p>
+                       </div>
+                       <div class="news__img">
+                           <img src="assets/img/sl4/1.png" alt="news">
+                       </div>
+                   </div>
+                    <div class="news__item">
+                        <div class="news__left">
+                            <div class="news__date">
+                                8 Апреля
+                                2019
+                            </div>
+                        </div>
+                        <div class="news__mid">
+                            <p  class="news__news-title">
+                                В НАО РАЗРАБАТЫВАЕТСЯ КОМПЛЕКС МЕР
+                                ДЛЯ ПОДДЕРЖКИ МАЛОГО БИЗНЕСА
+                            </p>
+                            <p class="news__news-text">
+                                В ходе совещания заместитель губернатора НАО
+                                Татьяна Логвиненко и председатель постоянной комиссии
+                                Собрания депутатов Ненецкого автономного округа
+                                по экономической политике и бюджету Наталья Кардакова
+                                совместно с начальником налоговой инспекции...
+                            </p>
+                        </div>
+                        <div class="news__img">
+                            <img src="assets/img/sl4/2.png" alt="news">
+                        </div>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__left">
+                            <div class="news__date">
+                                3 Апреля
+                                2019
+                            </div>
+                        </div>
+                        <div class="news__mid">
+                            <p  class="news__news-title">
+                                ГЛАВЫ ОКРУЖНЫХ ПОСЕЛЕНИЙ ОБСУДИЛИ ВОПРОСЫ
+                                ВНЕДРЕНИЯ СТАНДАРТА РАЗВИТИЯ КОНКУРЕНЦИИ
+                                НА ТЕРРИТОРИИ ОКРУГА
+                            </p>
+                            <p class="news__news-text">
+                                19 декабря 2018 года состоялся очередной учебно-
+                                консультационный семинар с главами муниципальных
+                                образований Ненецкого автономного округа, на котором
+                                представители Департамента финансов и экономики НАО
+                                рассказали о внедрении Стандарта развития...
+                            </p>
+                        </div>
+                        <div class="news__img">
+                            <img src="assets/img/sl4/3.png" alt="news">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <div class="popup-menu-mobile">
@@ -208,15 +334,26 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="assets/fullpage/jquery.easings.min.js"></script>
     <script src="assets/fullpage/scrolloverflow.min.js"></script>
     <script src="assets/fullpage/jquery.fullPage.min.js"></script>
     <script>
         $(document).ready(function() {
-            if (document.documentElement.clientHeight > 650) {
+            if (document.documentElement.clientHeight > 736) {
                 $('#fullpage').fullpage({
-                    anchors: ['main-screen', 'governor-appeal'],
+                    anchors: ['main-screen', 'governor-appeal','governor-reasons','governor-news'],
                     menu: '#navigation',
                 });
             }

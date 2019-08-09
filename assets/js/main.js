@@ -20,10 +20,10 @@ window.addEventListener('hashchange', checkClass);
 function checkClass() {
     if (!ttvVisible()) {
         document.querySelector('body').classList.add('fp-viewing-governor-appeal');
-        $('header').toggleClass('header-scroll');
+        $('header').addClass('header-scroll');
     } else {
         document.querySelector('body').classList.remove('fp-viewing-governor-appeal');
-         $('header').toggleClass('header-scroll');
+         $('header').removeClass('header-scroll');
     }
 }
 
