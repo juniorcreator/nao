@@ -351,7 +351,7 @@
     <script src="assets/fullpage/jquery.fullPage.min.js"></script>
     <script>
         $(document).ready(function() {
-            if (document.documentElement.clientHeight > 736) {
+            if ( document.documentElement.clientHeight > 736 && document.documentElement.clientWidth > 900 ) {
                 $('#fullpage').fullpage({
                     anchors: ['main-screen', 'governor-appeal','governor-reasons','governor-news'],
                     menu: '#navigation',

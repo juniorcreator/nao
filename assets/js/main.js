@@ -32,7 +32,6 @@ window.addEventListener('scroll', function() {
             },
             900
         );
-        // checkClass();
     }
 });
 
