@@ -20,13 +20,19 @@ window.addEventListener('hashchange', function(){
         ()=>{
             checkClass();
         },
-        500
+        900
     );
 });
 
 window.addEventListener('scroll', function() {
     if (!( document.documentElement.clientHeight > 736 && document.documentElement.clientWidth > 900) ) {
-        checkClass();
+        setTimeout(
+            ()=>{
+                checkClass();
+            },
+            900
+        );
+        // checkClass();
     }
 });
 
