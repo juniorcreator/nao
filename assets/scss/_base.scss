@@ -735,7 +735,7 @@ section {
       }
     }
   }
-  &__title {
+  p {
     color: #ffffff;
     font-size: 17px;
     font-weight: 700;
@@ -972,13 +972,16 @@ section {
       }
     }
   }
+  .governor-appeal.s-news {
+    .center-wrap {
+      padding-top: 50px;
+    }
+  }
 }
 
 @media (max-width: 1199.98px) {
   .prop {
     justify-content: space-between;
-    //flex-wrap: wrap;
-    //margin: 20px auto 0 auto;
     &__item:first-child {
       img {
         margin-left: 0;
@@ -996,7 +999,7 @@ section {
         }
       }
     }
-    &__title {
+    p {
       font-size: 14px;
     }
   }
@@ -1080,7 +1083,7 @@ section {
 @media (max-width: 991.98px) {
 
   .prop {
-    &__title {
+    p {
       font-size: 11px;
     }
   }
@@ -1200,9 +1203,14 @@ section {
       flex-direction: column;
       margin: 10px 5px 10px 5px;
     }
-    .prop__title {
+    .p {
       padding-top: 15px !important;
       padding-bottom: 0;
+    }
+  }
+  .governor-appeal.s-news {
+    .center-wrap {
+      padding-top: 25px;
     }
   }
 
@@ -1315,7 +1323,7 @@ section {
       flex-direction: column;
       margin: 10px 5px 10px 5px;
     }
-    .prop__title {
+    p {
       padding-top: 15px !important;
       padding-bottom: 0;
     }
@@ -1326,6 +1334,13 @@ section {
 }
 
 @media (max-width: 550.98px) {
+  .prop {
+    &__item {
+      p {
+        font-size: 12px;
+      }
+    }
+  }
   .header {
     .logo {
       height: 65px;
