@@ -866,11 +866,11 @@ section {
 }
 
 .slide-btn {
-  height: 60px;
-  width: 36px;
-  background-size: contain;
+  height: 60px !important;
+  width: 36px !important;
   transition: .5s;
   background-image: url(../img/NAO_icon-1-5.svg) !important;
+  background-size: contain !important;
   &--prev {
     transform: rotate(180deg);
     left: -2px !important;

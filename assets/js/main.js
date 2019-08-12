@@ -68,7 +68,8 @@ $(document).ready(function () {
         spaceBetween: 10,
         slidesPerGroup: 1,
         speed: 500,
-        loop: true,
+        loop: false,
+        effect: 'fade',
         autoplay: {
             delay: 20000,
         },
