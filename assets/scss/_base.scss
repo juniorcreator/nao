@@ -850,6 +850,12 @@ section {
     background-position: center;
     z-index: -1;
     background-size: cover;
+    &__second {
+      background-image: url(../img/sl4/bg2.png);
+    }
+    &__third {
+      background-image: url(../img/sl4/bg3.png);
+    }
   }
   .content {
     max-width: 1234px;
