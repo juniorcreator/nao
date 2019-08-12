@@ -72,9 +72,9 @@ $(document).ready(function () {
         autoplay: {
             delay: 20000,
         },
-        pagination: {
-            el: '.swiper-pagination',
-            dynamicBullets: true,
+        navigation: {
+            nextEl: '.slide-btn--next',
+            prevEl: '.slide-btn--prev',
         },
 
     });
