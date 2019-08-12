@@ -1,4 +1,4 @@
-var ttvVisible = function () {
+function ttvVisible() {
     var target = document.querySelector('[data-anchor="governor-appeal"]');
     // Все позиции элемента
     var targetPosition = {
@@ -15,15 +15,33 @@ var ttvVisible = function () {
     };
 };
 
-window.addEventListener('hashchange', checkClass);
+window.addEventListener('hashchange', function(){
+    setTimeout(
+        ()=>{
+            checkClass();
+        },
+        900
+    );
+});
+
+window.addEventListener('scroll', function() {
+    if (!( document.documentElement.clientHeight > 736 && document.documentElement.clientWidth > 900) ) {
+        setTimeout(
+            ()=>{
+                checkClass();
+            },
+            900
+        );
+    }
+});
 
 function checkClass() {
-    if (!ttvVisible()) {
+    if (ttvVisible()) {
         document.querySelector('body').classList.add('fp-viewing-governor-appeal');
         $('header').addClass('header-scroll');
     } else {
         document.querySelector('body').classList.remove('fp-viewing-governor-appeal');
-         $('header').removeClass('header-scroll');
+        $('header').removeClass('header-scroll');
     }
 }
 
