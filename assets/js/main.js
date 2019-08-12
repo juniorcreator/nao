@@ -36,16 +36,30 @@ $(document).ready(function () {
         loop: true,
         effect: 'fade',
         autoHeight: true,
-
         autoplay: {
             delay: 8000,
         },
-
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-    })
+    });
+
+    var mySwiper_2 = new Swiper('.slider', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
+        speed: 500,
+        loop: true,
+        autoplay: {
+            delay: 20000,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+        },
+
+    });
 });
 
 $('.menu-open--js').click(function () {
