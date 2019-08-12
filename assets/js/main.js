@@ -71,7 +71,7 @@ $(document).ready(function () {
         loop: false,
         effect: 'fade',
         autoplay: {
-            delay: 20000,
+            delay: 8000,
         },
         navigation: {
             nextEl: '.slide-btn--next',

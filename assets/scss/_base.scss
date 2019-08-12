@@ -873,10 +873,8 @@ section {
   background-size: contain !important;
   &--prev {
     transform: rotate(180deg);
-    left: -2px !important;
   }
   &--next {
-    right: -5px !important;
   }
   &:hover {
     opacity: .6;
@@ -886,6 +884,19 @@ section {
 @media (max-height: 650px) {
   .governor-appeal {
     height: auto;
+  }
+}
+@media (max-width: 1270px) {
+  .slide-btn {
+    &--prev {
+     left: -2px !important;
+    }
+    &--next {
+      right: -5px !important;
+    }
+    &:hover {
+      opacity: .6;
+    }
   }
 }
 
@@ -1241,6 +1252,15 @@ section {
     width: 18px !important;
     height: 26px !important;
     background-size: 18px 25px !important;
+    &--prev {
+      left: 3px !important;
+    }
+    &--next {
+      right: 0 !important;
+    }
+    &:hover {
+      opacity: .6;
+    }
   }
 }
 @media (max-width: 991.98px) and (max-height: 700px) {
