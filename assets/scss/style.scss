@@ -1,2 +1,24 @@
 @import "normilise";
+
+//media
+@import "media/media";
+
 @import "base";
+
+//slides
+@import "sliders";
+
+//components
+@import "components/header";
+@import "components/footer";
+
+//blocks
+@import "blocks/blocks";
+@import "blocks/popups";
+@import "blocks/prop";
+@import "blocks/news";
+@import "blocks/sections";
+@import "blocks/curners";
+
+//query
+@import "query";
