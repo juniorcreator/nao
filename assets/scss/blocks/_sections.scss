@@ -726,3 +726,125 @@ section {
   }
 }
 
+//s-info
+
+.s-info {
+  background: url(../img/sl8/bg1.png) 0 100%/auto repeat-x;
+  .swiper-button-next, .swiper-button-prev {
+    top: 39%;
+  }
+}
+
+.info {
+  &__item {
+    border-bottom: 2px solid #F5C607;
+    width: calc((100% - 30px) / 3);
+    padding-bottom: 9px;
+    margin-bottom: 37px;
+  }
+  p {
+    color: #fec704;
+    font-size: 21px;
+    font-weight: 300;
+    word-break: break-word;
+  }
+  &__title {
+    border-bottom: 2px solid #F5C607;
+    padding-bottom: 40px;
+    text-align: center;
+    margin-bottom: 22px;
+    h3, h4 {
+      text-transform: uppercase;
+      font-weight: 400;
+    }
+    h3 {
+      color: #fec704;
+      font-size: 35px;
+    }
+    h4 {
+      color: #ffffff;
+      font-size: 29px;
+
+
+    }
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+
+  }
+  &__num {
+    color: #ffffff;
+    font-size: 83px;
+    font-weight: 300;
+    letter-spacing: -4.93px;
+    word-wrap: break-word;
+  }
+  &__num-text {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 300;
+    margin-left: -21px;
+    letter-spacing: 0;
+  }
+}
+
+.slider-info {
+  height: 100%;
+  .content {
+    padding: 205px 25px 0 25px;
+  }
+  &__item {
+    &:first-child {
+      background-color: #009F5E;
+    }
+  }
+  &__item-wrap {
+    width: 100%;
+    height: 100%;
+    background-color:#009F5E !important;
+    //background: url(../img/sl8/bg1.png) 0 100%/auto repeat-x;
+    z-index: -1;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    background: url(../img/sl8/bg1.png) 0 100%/auto repeat-x;
+    &.s-2 {
+      background-color: #8B6AAC !important;
+    }
+    &.s-3 {
+      background-color: #FEC704 !important;
+      background: url(../img/sl8/bg2.png) 0 100%/auto repeat-x;
+      .info__title {
+        border-color: #e95035;
+        h3 {
+          color: #ffffff;
+        }
+      }
+      .info__item {
+        border-color: #e95035 !important;
+        &:last-child {
+          margin: 0 auto;
+        }
+      }
+      .info__num, .info__num-text, h4{
+        color: #e95035;
+      }
+      p {
+        color: #ffffff;
+      }
+    }
+    &.s-4 {
+      background-color: #20A6E0 !important;
+      .info__item {
+        &:nth-child(4) {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+

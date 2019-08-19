@@ -45,29 +45,7 @@ function checkClass() {
     }
 }
 
-function macy() {
-  var macy = Macy({
-    container: '#macy_container',
-    waitForImages: false,
-    margin: 3,
-    trueOrder: true,
-    columns: 4,
-    breakAt: {
-      1200: 5,
-      940: 3,
-      520: 2,
-      400: 1
-    }
-  });
-}
 
-// var elem = document.querySelector('.grid');
-// var msnry = new Masonry( elem, {
-//   // options
-//   itemSelector: '.grid-item',
-//   horizontalOrder: true,
-//   fitWidth: true
-// });
 
 $(document).ready(function () {
 
@@ -107,6 +85,24 @@ $(document).ready(function () {
         },
 
     });
+
+  var info = new Swiper('.slider-info', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    slidesPerGroup: 1,
+    speed: 500,
+    loop: true,
+    effect: 'fade',
+    fadeEffect: { crossFade: true },
+    autoplay: {
+      delay: 8000,
+    },
+    navigation: {
+      nextEl: '.slide-btn--next',
+      prevEl: '.slide-btn--prev',
+    },
+
+  });
 });
 
 $('.menu-open--js').click(function () {
