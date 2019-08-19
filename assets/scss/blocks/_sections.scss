@@ -729,11 +729,13 @@ section {
 //s-info
 
 .s-info {
-  background: url(../img/sl8/bg1.png) 0 100%/auto repeat-x;
+  //background: url(../img/sl8/bg1.png) 0 100%/auto repeat-x;
+  background-image: none;
   .swiper-button-next, .swiper-button-prev {
     top: 39%;
   }
 }
+
 
 .info {
   &__item {
@@ -790,6 +792,67 @@ section {
     margin-left: -21px;
     letter-spacing: 0;
   }
+  @include lg_1441 {
+    &__num {
+      font-size: 70px;
+    }
+    &__num-text {
+      left: -14px;
+    }
+  }
+  @include md_1190 {
+    &__num {
+      font-size: 50px;
+    }
+    &__num-text {
+      margin-left: -3px;
+      font-size: 16px;
+    }
+    p {
+      font-size: 19px;
+    }
+  }
+  @include md_960 {
+    padding-bottom: 80px;
+    &__num {
+      font-size: 36px;
+    }
+    &__num-text {
+      font-size: 16px;
+    }
+    p {
+      font-size: 17px;
+    }
+  }
+  @include sm_690 {
+    &__item {
+      width: calc((100% - 30px) / 2);
+    }
+    p {
+      font-size: 15px;
+    }
+    &__title {
+      h3 {
+        font-size: 30px;
+      }
+      h4 {
+        font-size: 23px;
+      }
+    }
+  }
+  @include xs_540 {
+    &__item {
+      width: calc((100% - 30px)/ 1);
+    }
+    &__title {
+      h3 {
+        font-size: 20px;
+      }
+      h4 {
+        font-size: 18px;
+      }
+    }
+  }
 }
 
 .slider-info {
@@ -798,6 +861,7 @@ section {
     padding: 205px 25px 0 25px;
   }
   &__item {
+    height: auto !important;
     &:first-child {
       background-color: #009F5E;
     }
@@ -846,5 +910,22 @@ section {
       }
     }
   }
+  @include sm_769 {
+    .content {
+      padding: 80px 25px 0 25px;
+    }
+  }
+  @include xs_540{
+    .content {
+      padding: 40px 25px 0 25px;
+    }
+  }
 }
 
+
+
+@media (max-height: 800px){
+  .s-info .center-wrap {
+    padding-bottom: 160px;
+  }
+}

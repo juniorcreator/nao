@@ -663,3 +663,10 @@
     }
   }
 }
+
+
+@media screen and ( max-height: 820px ) and ( min-width: 1200px ) {
+  .center-wrap {
+    padding-bottom: 175px;
+  }
+}
