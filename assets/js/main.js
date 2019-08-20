@@ -49,6 +49,12 @@ function checkClass() {
     } else {
         removeAdditionalHeaderClass();
     }
+    if ( ttvVisible(document.querySelector('[data-anchor="governor-info"]')) ) {
+      alert('is visible governor-info');  
+    } else {
+      alert('is not visible governor-info');  
+    }
+
 }
 
 function addAdditionalHeaderClass() {
