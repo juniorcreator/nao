@@ -1,5 +1,5 @@
-function ttvVisible() {
-    var target = document.querySelector('[data-anchor="governor-appeal"]');
+window.currentAnchor = 'default';
+function ttvVisible(target) {
     // Все позиции элемента
     var targetPosition = {
         top: window.pageYOffset + target.getBoundingClientRect().top,
@@ -9,6 +9,7 @@ function ttvVisible() {
         window.pageYOffset + document.querySelector('body > header').offsetHeight > targetPosition.top &&
         window.pageYOffset + document.querySelector('body > header').offsetHeight < targetPosition.bottom
     ) {
+        window.currentAnchor = target.getAttribute('data-anchor');
         return true;
     } else {
         return false;
@@ -36,16 +37,30 @@ window.addEventListener('scroll', function() {
 });
 
 function checkClass() {
-    if (ttvVisible()) {
-        document.querySelector('body').classList.add('fp-viewing-governor-appeal');
-        $('header').addClass('header-scroll');
+    window.currentAnchor = 'default';
+    $('header').attr('data-current-anchor', window.currentAnchor);
+    if (
+        ttvVisible(document.querySelector('[data-anchor="governor-appeal"]')) ||
+        ttvVisible(document.querySelector('[data-anchor="governor-invest"]')) ||
+        ttvVisible(document.querySelector('[data-anchor="governor-history"]')) ||
+        ttvVisible(document.querySelector('[data-anchor="governor-links"]'))
+    ) {
+      addAdditionalHeaderClass();
     } else {
-        document.querySelector('body').classList.remove('fp-viewing-governor-appeal');
-        $('header').removeClass('header-scroll');
+        removeAdditionalHeaderClass();
     }
 }
 
+function addAdditionalHeaderClass() {
+  $('header').attr('data-current-anchor', window.currentAnchor);
+  document.querySelector('body').classList.add('fp-viewing-governor-appeal');
+  $('header').addClass('header-scroll');
+}
 
+function removeAdditionalHeaderClass() {
+  document.querySelector('body').classList.remove('fp-viewing-governor-appeal');
+  $('header').removeClass('header-scroll');
+}
 
 $(document).ready(function () {
 
@@ -112,3 +127,14 @@ $('.menu-open--js').click(function () {
 $('.menu-mobile--close').click(function () {
     $('.popup-menu-mobile').fadeOut();
 });
+
+function initalCheckHeaderClass(){
+    switch (window.location.hash){
+        case '#governor-appeal':
+        case '#governor-invest':
+        case '#governor-history':
+        case '#governor-links':
+            addAdditionalHeaderClass();
+    }
+}
+initalCheckHeaderClass();
