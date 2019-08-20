@@ -246,6 +246,12 @@
       }
     }
   }
+  @include md_860 {
+    &--sl-6 {
+      width: 210px;
+      height: 380px;
+    }
+  }
   @include sm_769 {
     &--sl-6 {
       width: 198px;
@@ -264,6 +270,14 @@
     }
   }
   @include sm_690 {
+    &--sl-6.top {
+      right: -121px;
+      top: -206px;
+    }
+    &--sl-6.bot {
+      right: -120px;
+      bottom: -203px;
+    }
     &--top, &--bottom {
       width: 130px;
       height: 130px;
@@ -302,19 +316,27 @@
       .img{
         height: 70px;
         img {
-          top: 20%;
+          top: 37%;
+          max-width: 40px;
+          left: 34%;
         }
       }
       .sm {
         height: 70px;
       }
       &--top {
-        left: 73%;
+        left: 90%;
         top: -2%;
       }
       &--bot {
-        left: 73%;
+        left: 90%;
         bottom: -2%;
+        .img {
+          img {
+            top: 39%;
+            left: 42%;
+          }
+        }
       }
     }
   }

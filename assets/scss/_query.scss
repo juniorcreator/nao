@@ -280,7 +280,7 @@
 
 @media (max-width: 991.98px) {
   .slider .content {
-    padding: 60px 25px 0 25px;
+    padding: 120px 25px 0 25px;
   }
   .prop {
     p {
@@ -661,5 +661,12 @@
     .menu-mobile__wrap {
       width: 100%;
     }
+  }
+}
+
+
+@media screen and ( max-height: 820px ) and ( min-width: 1200px ) {
+  .center-wrap {
+    padding-bottom: 175px;
   }
 }
