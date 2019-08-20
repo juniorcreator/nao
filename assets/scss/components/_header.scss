@@ -17,7 +17,6 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
-
   .header-right {
     display: flex;
     flex-direction: column;
@@ -200,7 +199,12 @@
     }
   }
 }
-
+[data-current-anchor='governor-info'] .logo {
+  background-image: url(../img/logo_white.svg) !important;
+}
+[data-current-anchor='governor-news'] .logo {
+  background-image: url(../img/logo_white.svg) !important;
+}
 .header.header-scroll {
   .logo {
     background-image: url(../img/black-NAO_icon-1-6_logo.svg);
