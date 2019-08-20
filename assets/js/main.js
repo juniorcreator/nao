@@ -45,7 +45,12 @@ function checkClass() {
     }
 }
 
+
+
 $(document).ready(function () {
+
+  // macy();
+
     var mySwiper1 = new Swiper('.main-screen .swiper-container', {
         slidesPerView: 1,
         spaceBetween: 40,
@@ -54,16 +59,50 @@ $(document).ready(function () {
         loop: true,
         effect: 'fade',
         autoHeight: true,
-
         autoplay: {
             delay: 8000,
         },
-
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-    })
+    });
+
+    var mySwiper_2 = new Swiper('.slider', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        slidesPerGroup: 1,
+        speed: 500,
+        loop: true,
+        effect: 'fade',
+        fadeEffect: { crossFade: true },
+        autoplay: {
+            delay: 8000,
+        },
+        navigation: {
+            nextEl: '.slide-btn--next',
+            prevEl: '.slide-btn--prev',
+        },
+
+    });
+
+  var info = new Swiper('.slider-info', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    slidesPerGroup: 1,
+    speed: 500,
+    loop: true,
+    effect: 'fade',
+    fadeEffect: { crossFade: true },
+    autoplay: {
+      delay: 8000,
+    },
+    navigation: {
+      nextEl: '.slide-btn--next',
+      prevEl: '.slide-btn--prev',
+    },
+
+  });
 });
 
 $('.menu-open--js').click(function () {

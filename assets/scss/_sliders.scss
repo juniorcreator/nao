@@ -1,0 +1,50 @@
+.slider {
+  height: 100%;
+  .swiper-slide.swiper-slide-prev {
+    opacity: 0 !important;
+  }
+  &__nav {
+
+  }
+  &__item--wrap {
+    width: 100%;
+    height: 100%;
+    background-color: #816FB2;
+    //background-image: url(../img/sl4/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    &__second {
+      background-color: #20A6DF;
+      //background-image: url(../img/sl4/bg2.png);
+    }
+    &__third {
+      background-image: url(../img/sl4/bg3.png);
+    }
+  }
+  .content {
+    max-width: 1234px;
+    width: 100%;
+    padding: 193px 25px 0 25px;
+    margin: 0 auto;
+  }
+}
+
+.slide-btn {
+  height: 60px !important;
+  width: 36px !important;
+  transition: .5s;
+  background-image: url(../img/NAO_icon-1-5.svg) !important;
+  background-size: contain !important;
+  &--prev {
+    transform: rotate(180deg);
+  }
+  &--next {
+  }
+  &:hover {
+    opacity: .6;
+  }
+}
