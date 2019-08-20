@@ -43,7 +43,8 @@ function checkClass() {
         ttvVisible(document.querySelector('[data-anchor="governor-appeal"]')) ||
         ttvVisible(document.querySelector('[data-anchor="governor-invest"]')) ||
         ttvVisible(document.querySelector('[data-anchor="governor-history"]')) ||
-        ttvVisible(document.querySelector('[data-anchor="governor-links"]'))
+        ttvVisible(document.querySelector('[data-anchor="governor-links"]')) ||
+        ttvVisible(document.querySelector('[data-anchor="governor-news"]'))
     ) {
       addAdditionalHeaderClass();
     } else {
