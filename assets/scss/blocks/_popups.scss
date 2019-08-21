@@ -44,7 +44,7 @@
         margin-bottom: 10px;
 
         .menu-mobile__link {
-          color: #000;
+          color: $color_black;
 
           &:hover {
             text-decoration: underline;
@@ -96,7 +96,7 @@
         input {
           padding: 4px 10px 4px 3px;
           width: 235px;
-          color: #000;
+          color: $color_black;
           position: relative;
           z-index: 3;
           background-color: transparent;
@@ -142,7 +142,7 @@
         margin-right: 27px;
         font-size: 12.5px;
         font-weight: 400;
-        color: #000;
+        color: $color_black;
 
         .menu-mobile-lang__list {
           margin-right: 5px;
