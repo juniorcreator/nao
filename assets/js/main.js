@@ -44,13 +44,16 @@ function checkClass() {
         ttvVisible(document.querySelector('[data-anchor="governor-invest"]')) ||
         ttvVisible(document.querySelector('[data-anchor="governor-history"]')) ||
         ttvVisible(document.querySelector('[data-anchor="governor-links"]')) ||
+        ttvVisible(document.querySelector('[data-anchor="governor-info"]')) ||
         ttvVisible(document.querySelector('[data-anchor="governor-news"]'))
     ) {
       addAdditionalHeaderClass();
     } else {
         removeAdditionalHeaderClass();
     }
-    if ( ttvVisible(document.querySelector('[data-anchor="governor-info"]')) ) {
+    if (ttvVisible(document.querySelector('[data-anchor="governor-history"]'))  ||
+        ttvVisible(document.querySelector('[data-anchor="governor-links"]'))      ||
+          ttvVisible(document.querySelector('[data-anchor="governor-invest"]')))  {
       // alert('is visible governor-info');
       addAdditionalHeaderClass();
     } else {
