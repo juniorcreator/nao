@@ -1,0 +1,48 @@
+.header-lang {
+  display: flex;
+  align-items: center;
+  margin-right: 14px;
+  font-size: 12.5px;
+  font-weight: 400;
+  color: $color_white;
+
+  .header-lang__list {
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    .header-lang__item {
+      //display: none;
+      color: $color_white;
+      font-size: 12.5px;
+      text-transform: uppercase;
+      margin-right: 1px;
+      transition: all .3s;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      padding: 5px 6.5px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        border: 1px solid $color_white;
+
+      }
+    }
+    .header-lang__item.active {
+      //display: block;
+      border: 1px solid;
+      border-radius: 3px;
+    }
+  }
+  .header-lang__btn {
+    margin-top: 6px;
+    cursor: pointer;
+    background-color: transparent;
+    transform: rotate(90deg);
+    width: 15px;
+    height: 12px;
+    background-image: url(../img/NAO_icon-1-5.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}

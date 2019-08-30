@@ -26,12 +26,15 @@
 					</label>
 					<button class="header-search__btn"></button>
 				</form>
+				<button class="btn  btn--login">
+					Войти
+				</button>
 				<div class="header-lang">
 					<div class="header-lang__list">
-						<div class="header-lang__item active">Рус</div>
-						<div class="header-lang__item">En</div>
+						<a href="#" class="header-lang__item active">Рус</a>
+						<a href="#" class="header-lang__item">En</a>
 					</div>
-					<button class="header-lang__btn"></button>
+<!--					<button class="header-lang__btn"></button>-->
 				</div>
 				<div class="header-social__list">
 					<a href="" target="_blank" class="header-social__link">
@@ -118,7 +121,31 @@
 		</div>
 		<footer class="main-screen__footer">
 			<div class="center-wrap">
-				<a href="" class="main-screen__btn">Канал прямой связи для инвесторов</a>
+				<div class="main-btns">
+					<a href="" class="btn btn--main">Канал прямой связи для инвесторов</a>
+					<a href="" class="btn btn--main btn--svg "><?xml version="1.0" encoding="utf-8"?>
+						<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+						<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+						     viewBox="0 0 600 600" enable-background="new 0 0 600 600" xml:space="preserve">
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="7.1" y="10.1" width="585.8" height="579.7"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<path clip-path="url(#SVGID_2_)" fill="#FFFFFF" d="M592.9,240.7c0,0,0,45.3-45.4,45.3H321.7c0,0-45.3,0-45.3-38.2V94.5
+		c0,0,0-38.9,24.5-42.5c24.5-3.6,73.2-10.4,122.1-17.9c51.4-7.7,103-15.9,154.2-23.9h13.3c0,0,2.6,0,2.6,45.4
+		C592.9,101.7,592.9,193.3,592.9,240.7 M591.1,550.4c0,0,0,45.3-44.9,38.9c-60.7-8.8-165.1-23.8-225.4-32.5c0,0-45-6.5-45-44.9
+		V359.1c0,0,0-38.6,45.4-38.6h224.4c0,0,45.4,0,45.4,45.4V550.4z M242.5,248.2c0,0,0,38.1-39.2,38.1H47.4c0,0-39.5,0-39.5-31.6
+		V127.2c0,0,0-32.9,38.6-38.6C85.1,83.1,163.1,71.8,202.8,66c0,0,39.7-5.8,39.7,32.2V248.2z M242.2,507.3c0,0,0,38-39.8,32.3
+		c-39.8-5.8-117.3-17.1-156.3-22.8c0,0-38.9-5.6-38.9-37.9V352.3c0,0,0-31.9,39.3-31.9h156.5c0,0,39.4,0,39.4,37.2V507.3z"/>
+</g>
+</svg>
+						<span>Одно окно</span></a>
+				</div>
+
 				<div class="new-index__list">
 					<a href="" class="new-index__item">
 						<p class="new-index__item-time">
@@ -1230,7 +1257,9 @@
 		</div>
 	</div>
 </div>
-
+<div class="calendar">
+	<img src="assets/img/kalendar.png" alt="">
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="assets/fullpage/jquery.easings.min.js"></script>
@@ -1241,8 +1270,10 @@
     if (document.documentElement.clientHeight > 736 && document.documentElement.clientWidth > 900) {
       $('#fullpage').fullpage({
         anchors: ['main-screen', 'governor-appeal',
-	        'governor-reasons', 'governor-news', 'governor-invest','governor-history','governor-links'],
+	        'governor-reasons', 'governor-news', 'governor-invest','governor-history','governor-links', 'governor-info'],
         menu: '#navigation',
+        navigation:true,
+        showActiveTooltip: true,
       });
     }
   });
