@@ -178,29 +178,7 @@
 }
 
 @media (max-width: 1199.98px) {
-  .prop {
-    justify-content: space-between;
-    &__item:first-child {
-      img {
-        margin-left: 0;
-      }
-    }
-    &__item {
-      width: calc((100% - 40px) / 5);
-      margin-right: 0;
-      img {
-        max-width: 100%;
-      }
-      &:first-child {
-        p {
-          text-align: left;
-        }
-      }
-    }
-    p {
-      font-size: 14px;
-    }
-  }
+
   .header {
     top: 0px;
     padding: 10px 0 15px;
@@ -284,7 +262,7 @@
   }
   .prop {
     p {
-      font-size: 11px;
+      //font-size: 11px;
     }
   }
   .main-screen {
@@ -397,34 +375,6 @@
 
 }
 @media (max-width: 767.98px) {
-  .prop {
-    flex-wrap: wrap;
-    margin: 30px auto 30px auto;
-    &__item {
-      width: calc((100% - 40px)/ 2);
-      max-width: 200px;
-      align-items: center;
-      &:first-child {
-        padding-top: 0;
-      }
-      p {
-        margin-bottom: 0 !important;
-        text-align: center !important;
-      }
-      img {
-        max-width: 130px;
-      }
-    }
-    .prop__item {
-      padding-top: 0;
-      flex-direction: column;
-      margin: 10px 5px 10px 5px;
-    }
-    .p {
-      padding-top: 15px !important;
-      padding-bottom: 0;
-    }
-  }
   .governor-appeal.s-news {
     .center-wrap {
       padding-top: 25px;
@@ -521,35 +471,6 @@
 }
 
 @media (max-width: 768.98px) {
-  .prop {
-    flex-wrap: wrap;
-    margin: 30px auto 30px auto;
-    &__item {
-      width: calc((100% - 40px)/ 2);
-      max-width: 200px;
-      align-items: center;
-      &:first-child {
-        padding-top: 0;
-      }
-      p {
-        margin-bottom: 0 !important;
-        text-align: center !important;
-        font-size: 14px;
-      }
-      img {
-        max-width: 130px;
-      }
-    }
-    .prop__item {
-      padding-top: 0;
-      flex-direction: column;
-      margin: 10px 5px 10px 5px;
-    }
-    p {
-      padding-top: 15px !important;
-      padding-bottom: 0;
-    }
-  }
   .news {
     margin-top: 8%;
   }
@@ -560,13 +481,6 @@
     &__title {
       font-size: 27px;
       word-break: break-word;
-    }
-  }
-  .prop {
-    &__item {
-      p {
-        font-size: 12px;
-      }
     }
   }
   .header {

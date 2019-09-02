@@ -31,6 +31,9 @@
 @mixin xs_540 {
   @media (max-width: 540px) { @content; }
 }
+@mixin xs_480 {
+  @media (max-width: 480px) { @content; }
+}
 @mixin xs_320 {
   @media (max-width: 320px) { @content; }
 }

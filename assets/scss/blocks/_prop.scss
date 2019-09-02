@@ -1,60 +1,113 @@
 .prop {
   max-width: 1001px;
-  margin: 64px auto 0 auto;
-  display: flex;
-  align-items: flex-start;
+  margin: 0 auto 0 auto;
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+  }
   &__item {
     display: flex;
     flex-direction: column;
-    margin-right: 17px;
+    width: calc((100% - 64px) / 5);
     img {
       max-width: 184px;
     }
+    p {
+
+    }
     &:first-child {
-      flex-direction: column-reverse;
       padding-top: 96px;
-      img {
-        margin-left: auto;
-      }
-      p {
-        text-align: right;
-        margin-bottom: 19px;
-      }
     }
     &:last-child {
       padding-top: 89px;
       margin-right: 0;
-      p {
-        padding-top: 20px;
-      }
     }
     &:nth-child(2) {
       p {
-        text-align: left;
-        padding-top: 22px;
       }
     }
     &:nth-child(3) {
-      flex-direction: column-reverse;
       padding-top: 54px;
-      p {
-        text-align: left;
-        margin-bottom: 19px;
-      }
     }
     &:nth-child(4) {
-      flex-direction: column-reverse;
       padding-top: 161px;
-      p {
-        text-align: left;
-        margin-bottom: 16px;
-      }
     }
   }
   p {
     color: #ffffff;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
+    padding-top: 20px;
+    margin-bottom: 5px;
+  }
+  &__text {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+  }
+  @include md_1190 {
+      justify-content: space-between;
+      &__item {
+        img {
+          max-width: 100%;
+        }
+      }
+      p {
+        font-size: 13px;
+        padding-top: 15px;
+      }
+
+  }
+  @include md_960 {}
+  @include md_900 {
+    padding-bottom: 30px;
+  }
+  @include sm_769 {
+      flex-wrap: wrap;
+      margin: 30px auto 30px auto;
+      &__item {
+        width: calc((100% - 40px)/ 2);
+        max-width: 200px;
+        align-items: center;
+        &:first-child {
+          padding-top: 0;
+        }
+        p {
+          text-align: left;
+          font-size: 14px;
+          padding: 0 7px;
+        }
+        img {
+          //max-width: 140px;
+        }
+      }
+    &__text {
+      padding: 0 7px;
+    }
+    .prop__item {
+      padding-top: 0;
+      flex-direction: column;
+      margin: 10px 5px 10px 5px;
+    }
+    p {
+      padding-top: 15px !important;
+      padding-bottom: 0;
+    }
+  }
+  @include xs_480 {
+    &__wrap {
+      justify-content: center;
+    }
+    &__item {
+      width: 100%;
+      max-width: initial;
+    }
+    p, &__text {
+      padding: 0;
+    }
   }
 }

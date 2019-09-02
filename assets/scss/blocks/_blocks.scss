@@ -153,18 +153,15 @@
 .calendar {
   text-align: center;
   position: fixed;
+  z-index: 3;
   max-width: 57px;
-  //max-width: 108px;
   left: 0;
   bottom: 9.5%;
   cursor: pointer;
   background-color: #009F5E;
   padding: 13px 8px 8px 8px;
-  //padding: 13px 20px 8px 23px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  //border-top-right-radius: 20px;
-  //border-bottom-right-radius: 20px;
   transition: all .3s;
   p {
     color: #fff;
@@ -230,5 +227,20 @@
     .btn {
       margin-right: 0;
     }
+  }
+}
+
+//invest-map
+.invest-map {
+  a {
+    display: flex;
+    align-items: center;
+  }
+  span {
+    color: $color_white;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 16px;
+    margin-bottom: 5px;
   }
 }

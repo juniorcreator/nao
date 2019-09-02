@@ -5,35 +5,58 @@
   font-size: 12.5px;
   font-weight: 400;
   color: $color_white;
-
-  .header-lang__list {
+  &__list {
     margin-right: 5px;
     display: flex;
     align-items: center;
-    .header-lang__item {
-      //display: none;
-      color: $color_white;
-      font-size: 12.5px;
-      text-transform: uppercase;
-      margin-right: 1px;
-      transition: all .3s;
-      border: 1px solid transparent;
-      border-radius: 3px;
-      padding: 5px 6.5px;
-      &:last-child {
-        margin-right: 0;
-      }
-      &:hover {
-        border: 1px solid $color_white;
-
-      }
+  }
+  &__item {
+    color: $color_white;
+    font-size: 12.5px;
+    text-transform: uppercase;
+    margin-right: 1px;
+    transition: all .3s;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 5px 6.5px;
+    &:last-child {
+      margin-right: 0;
     }
-    .header-lang__item.active {
-      //display: block;
+    &:hover {
+      border: 1px solid $color_white;
+
+    }
+    &.active {
       border: 1px solid;
       border-radius: 3px;
     }
   }
+  //.header-lang__list {
+  //
+  //  .header-lang__item {
+  //    //display: none;
+  //    color: $color_white;
+  //    font-size: 12.5px;
+  //    text-transform: uppercase;
+  //    margin-right: 1px;
+  //    transition: all .3s;
+  //    border: 1px solid transparent;
+  //    border-radius: 3px;
+  //    padding: 5px 6.5px;
+  //    &:last-child {
+  //      margin-right: 0;
+  //    }
+  //    &:hover {
+  //      border: 1px solid $color_white;
+  //
+  //    }
+  //  }
+  //  .header-lang__item.active {
+  //    //display: block;
+  //    border: 1px solid;
+  //    border-radius: 3px;
+  //  }
+  //}
   .header-lang__btn {
     margin-top: 6px;
     cursor: pointer;
@@ -44,5 +67,10 @@
     background-image: url(../img/NAO_icon-1-5.svg);
     background-size: contain;
     background-repeat: no-repeat;
+  }
+}
+.menu-mobile__bottom {
+  .header-lang__item {
+    color: $color_black;
   }
 }
