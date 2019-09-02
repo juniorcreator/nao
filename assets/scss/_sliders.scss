@@ -47,3 +47,43 @@
     opacity: .6;
   }
 }
+
+
+//slider-quote
+
+.slider-quote {
+  position: relative;
+  margin-bottom: 22px;
+  &:after {
+    content: '';
+    position: absolute;
+    left: -49px;
+    top: 14px;
+    width: 32px;
+    height: 28px;
+    background-image: url(../img/sl2/quote.png);
+    background-repeat: no-repeat;
+  }
+  &__wrap {
+
+  }
+  &__item {
+    color: #000000;
+    font-size: 19px;
+    font-weight: 300;
+
+
+    background-position: left top;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  @include xs_540 {
+    &:after {
+      width: 15px;
+      height: 11px;
+      left: -18px;
+      top: 5px;
+      background-size: contain;
+    }
+  }
+}

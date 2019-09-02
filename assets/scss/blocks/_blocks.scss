@@ -144,14 +144,56 @@
       }
     }
   }
+  @include md_1190 {
+    right: 35px;
+  }
 }
 
 //calendar
 .calendar {
+  text-align: center;
   position: fixed;
+  max-width: 57px;
+  //max-width: 108px;
   left: 0;
   bottom: 9.5%;
   cursor: pointer;
+  background-color: #009F5E;
+  padding: 13px 8px 8px 8px;
+  //padding: 13px 20px 8px 23px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  //border-top-right-radius: 20px;
+  //border-bottom-right-radius: 20px;
+  transition: all .3s;
+  p {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    transition: all .3s;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  }
+  svg {
+    transition: all .3s;
+    max-width: 32px;
+    //max-width: 67px;
+  }
+  &:hover {
+    max-width: 108px;
+    padding: 13px 20px 8px 23px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    p {
+      opacity: 1;
+      height: auto;
+      overflow: visible;
+    }
+    svg {
+      max-width: 67px;
+    }
+  }
 }
 
 ///main btns

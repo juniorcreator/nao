@@ -95,6 +95,21 @@ $(document).ready(function () {
         },
     });
 
+  var quote_slider = new Swiper('.slider-quote__container', {
+    slidesPerView: 1,
+    spaceBetween: 40,
+    slidesPerGroup: 1,
+    speed: 500,
+    grabCursor: true,
+    loop: false,
+    // effect: 'fade',
+    // fadeEffect: { crossFade: true },
+    autoHeight: false,
+    // autoplay: {
+    //   delay: 8000,
+    // },
+  });
+
     var mySwiper_2 = new Swiper('.slider', {
         slidesPerView: 1,
         spaceBetween: 10,
