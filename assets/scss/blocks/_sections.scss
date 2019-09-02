@@ -39,13 +39,13 @@ section {
       text-transform: uppercase;
       font-weight: 400;
       font-size: 35px;
-      color: #000;
+      color: $color_black;
       margin-bottom: 55px;
     }
     p {
       font-weight: 400;
       font-size: 16.6px;
-      color: #000;
+      color: $color_black;
       margin-bottom: 22px;
       &:last-of-type {
         margin-bottom: 0;
@@ -64,7 +64,7 @@ section {
       max-width: initial;
       margin-top: 43px;
       h2 {
-        color: #fff;
+        color: $color_white;
         text-align: center;
       }
     }
@@ -84,14 +84,14 @@ section {
 }
 /////
 .s-invest {
-  background-color: #fff;
+  background-color: $color_white;
   background-image: none;
 }
 .s-title {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 35px;
-  color: #000;
+  color: $color_black;
   margin-bottom: 49px;
   text-align: center;
   word-break: break-word;
@@ -154,7 +154,7 @@ section {
   height: 100%;
   &__wrap {
     height: 100%;
-    background-color: #FEC704;
+    background-color: $color_yellow;
     padding-top: 47px;
     padding-bottom: 79px;
     position: relative;
@@ -165,7 +165,7 @@ section {
     margin-left: 5px;
   }
   &__number {
-    color: #fec704;
+    color: $color_yellow;
     font-size: 50px;
     font-weight: 700;
     line-height: 1;
@@ -203,10 +203,10 @@ section {
       background-color: #20A6DF;
     }
     &.n-3,&.n-6 {
-      background-color: #009F5E;
+      background-color: $color_green;
     }
     &.n-4,&.n-5, &.n-7  {
-      background-color: #8A6AAC;
+      background-color: $color_fiol;
     }
     &.n-1 {
       max-width: 283px;
@@ -353,7 +353,7 @@ section {
     text-align: center;
   }
   &__link {
-    color: #000000;
+    color: $color_black;
     font-size: 15px;
     font-weight: 500;
     display: flex;
@@ -458,7 +458,7 @@ section {
 
 ////s-history
 .s-history {
-  background: url(../img/sl6/bg.png) 100% 100.8% repeat-x,url(../img/sl6/left.png) -34px 50%/244px 483px no-repeat;  background-color: #fff;
+  background: url(../img/sl6/bg.png) 100% 100.8% repeat-x,url(../img/sl6/left.png) -34px 50%/244px 483px no-repeat;  background-color: $color_white;
   padding-bottom: 86px;
   position: relative;
   z-index: 1;
@@ -478,7 +478,7 @@ section {
 .history {
   width: 100%;
   &__title {
-    color: #20a6df;
+    color: $color_blue;
     font-size: 35px;
     font-weight: 400;
     text-transform: uppercase;
@@ -505,7 +505,7 @@ section {
       left: 0;
       width: 100%;
       height: 12px;
-      background-color:#20A6DF;
+      background-color:$color_blue;
     }
     img {
       position: absolute;
@@ -517,13 +517,13 @@ section {
     }
   }
   &__t2 {
-    color: #20a6df;
+    color: $color_blue;
     font-size: 10px;
     font-weight: 500;
     margin-bottom: 2px;
   }
   &__t1 {
-    color: #20a6df;
+    color: $color_blue;
     font-size: 19px;
     font-weight: 700;
     text-transform: uppercase;
@@ -531,7 +531,7 @@ section {
     word-wrap: break-word;
   }
   &__text {
-    color: #000000;
+    color: $color_black;
     font-size: 12px;
     font-weight: 400;
     word-wrap: break-word;
@@ -539,7 +539,7 @@ section {
     min-height: 52px;
   }
   &__text-title {
-    color: #20a6df;
+    color: $color_blue;
     font-size: 13px;
     font-weight: 400;
     text-transform: uppercase;
@@ -548,7 +548,7 @@ section {
     border-top: 1px solid #20A6DF;
   }
   &__text-prop {
-    color: #000000;
+    color: $color_black;
     font-size: 13px;
     font-weight: 500;
     margin-bottom: 11px;
@@ -647,7 +647,7 @@ section {
     }
   }
   &__title {
-    color: #000;
+    color: $color_black;
     font-size: 35px;
     font-weight: 400;
     text-transform: uppercase;
@@ -744,7 +744,7 @@ section {
     margin-bottom: 37px;
   }
   p {
-    color: #fec704;
+    color: $color_yellow;
     font-size: 21px;
     font-weight: 300;
     word-break: break-word;
@@ -759,11 +759,11 @@ section {
       font-weight: 400;
     }
     h3 {
-      color: #fec704;
+      color: $color_yellow;
       font-size: 35px;
     }
     h4 {
-      color: #ffffff;
+      color: $color_white;
       font-size: 29px;
 
 
@@ -778,14 +778,14 @@ section {
 
   }
   &__num {
-    color: #ffffff;
+    color: $color_white;
     font-size: 83px;
     font-weight: 300;
     letter-spacing: -4.93px;
     word-wrap: break-word;
   }
   &__num-text {
-    color: #ffffff;
+    color: $color_white;
     font-size: 21px;
     font-weight: 300;
     margin-left: -21px;
@@ -862,13 +862,13 @@ section {
   &__item {
     height: auto !important;
     &:first-child {
-      background-color: #009F5E;
+      background-color: $color_green;
     }
   }
   &__item-wrap {
     width: 100%;
     height: 100%;
-    background-color:#009F5E !important;
+    background-color:$color_green !important;
     //background: url(../img/sl8/bg1.png) 0 100%/auto repeat-x;
     z-index: -1;
     background-size: cover;
@@ -876,28 +876,28 @@ section {
     overflow: hidden;
     background: url(../img/sl8/bg1.png) 0 100%/auto repeat-x;
     &.s-2 {
-      background-color: #8B6AAC !important;
+      background-color: $color_fiol !important;
     }
     &.s-3 {
-      background-color: #FEC704 !important;
+      background-color: $color_yellow !important;
       background: url(../img/sl8/bg2.png) 0 100%/auto repeat-x;
       .info__title {
-        border-color: #e95035;
+        border-color: $color_red;
         h3 {
-          color: #ffffff;
+          color: $color_white;
         }
       }
       .info__item {
-        border-color: #e95035 !important;
+        border-color: $color_red !important;
         &:last-child {
           margin: 0 auto;
         }
       }
       .info__num, .info__num-text, h4{
-        color: #e95035;
+        color: $color_red;
       }
       p {
-        color: #ffffff;
+        color: $color_white;
       }
     }
     &.s-4 {

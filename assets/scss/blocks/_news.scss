@@ -31,7 +31,7 @@
     margin-bottom: 32px;
   }
   &__all-news {
-    color: #ffffff;
+    color: $color_white;
     font-size: 10px;
     font-weight: 400;
     border-bottom: 1px solid #fff;
@@ -43,7 +43,7 @@
     }
   }
   &__title {
-    color: #ffffff;
+    color: $color_white;
     font-size: 35px;
     font-weight: 400;
     text-transform: uppercase;
@@ -51,7 +51,7 @@
     margin-left: -4px;
   }
   &__news-title, &__news-text {
-    color: #ffffff;
+    color: $color_white;
     font-size: 14.5px;
     font-weight: 400;
     width: 100%;
@@ -67,7 +67,7 @@
     padding-right: 15px;
   }
   &__date {
-    color: #ffffff;
+    color: $color_white;
     font-size: 15px;
     font-weight: 300;
     width: 100px;

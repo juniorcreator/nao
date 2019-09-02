@@ -1,0 +1,62 @@
+.btn {
+  text-align: center;
+  color: $color_black;
+  outline: none;
+  border: none;
+  background-color: $color_white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: color .3s, background-color .3s;
+  &--login {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 7px 23px 7px 21px;
+    margin-right: 16px;
+    &:hover {
+      background-color: $color_black;
+      color: $color_white;;
+    }
+  }
+  &--main {
+    background-color: transparent;
+    text-align: center;
+    border: 3px solid #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 14.5px 24px;
+    font-size: 22px;
+    color: $color_white;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  @include md_960 {
+    &--main {
+      font-size: 21px;
+    }
+  }
+  @include sm_769 {
+     &--main {
+       font-size: 18px;
+     }
+   }
+  @include xs_540 {
+    &--main {
+      font-size: 16px;
+    }
+  }
+}
+
+
+.btn--svg {
+  position: relative;
+  padding-left: 113px;
+  svg {
+    position: absolute;
+    left: 37px;
+    top: calc(50% - 18px);
+    max-height: 34px;
+    max-width: 35px;
+  }
+}
