@@ -728,6 +728,9 @@ section {
   @include sm_769 {
 
   }
+  @include h750 {
+    height: auto;
+  }
   @include xs_540 {
     .center-wrap {
       padding: 0 25px 0 !important;
@@ -1152,6 +1155,6 @@ section {
     }
   }
   .prop {
-    margin: 10px auto 0 auto;
+    margin: 10px auto 70px auto;
   }
 }
