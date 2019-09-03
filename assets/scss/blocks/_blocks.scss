@@ -227,6 +227,8 @@
   }
   @include sm_769 {
     max-width: initial;
+    justify-content: center;
+    align-items: center;
   }
   @include xs_540 {
     .btn {
