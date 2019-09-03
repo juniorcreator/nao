@@ -1055,53 +1055,21 @@
 					Полезные ссылки
 				</h3>
 				<div class="links__wrap">
-					<div class="links__side-left">
-							<a href="" class="links__item">
-								<img src="assets/img/sl7/1.png" alt="link">
-							</a>
-							<a href="" class="links__item">
-								<img src="assets/img/sl7/2.png" alt="link">
-							</a>
-							<a href="" class="links__item">
-								<img src="assets/img/sl7/3.png" alt="link">
-							</a>
-						<a href="" class="links__item">
-							<img src="assets/img/sl7/4.png" alt="link">
-						</a>
-						<a href="" class="links__item">
-							<img src="assets/img/sl7/5.png" alt="link">
-						</a>
-						<a href="" class="links__item">
-							<img src="assets/img/sl7/6.png" alt="link">
-						</a>
-						<a href="" class="links__item">
-							<img src="assets/img/sl7/7.png" alt="link">
-						</a>
-						<a href="" class="links__item">
-							<img src="assets/img/sl7/8.png" alt="link">
-						</a>
-						<a href="" class="links__item">
-							<img src="assets/img/sl7/9.png" alt="link">
-						</a>
-					</div>
-<!--					<div class="links__side-right">-->
-<!--					</div>-->
-				</div>
-				<div class="links__side-mid">
-					<a href="#">
-						<img src="assets/img/sl7/10.png" alt="link">
+					<a href="#" class="links__item">
+						<img src="assets/img/sl7/new1.png" alt="link">
 					</a>
-					<a href="#">
-						<img src="assets/img/sl7/11.png" alt="link">
+					<a href="#" class="links__item">
+						<img src="assets/img/sl7/new2.png" alt="link">
+					</a>
+					<a href="#" class="links__item">
+						<img src="assets/img/sl7/new3.png" alt="link">
 					</a>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section data-anchor="governor-info" class="governor-appeal s-info section">
-<!--		<div class="center-wrap">-->
 
-<!--		</div>-->
+	<section data-anchor="governor-info" class="governor-appeal s-info section">
 		<div class="slider-info swiper-container">
 			<div class="slider__container swiper-wrapper">
 				<div class="slider-info__item swiper-slide">
@@ -1315,6 +1283,19 @@
 		</div>
 	</section>
 </main>
+<footer class="footer">
+	<div class="footer__wrap">
+		<a href="#" class="footer__pageMap">
+			Карта сайта
+		</a>
+		<div class="footer__copy">
+			©  2019 Инвестиционный портал Ненецкого Автономного Округа
+		</div>
+		<a href="#" class="footer__rss">
+			<img src="assets/img/sl7/rss.png" alt="image">
+		</a>
+	</div>
+</footer>
 <div class="popup-menu-mobile">
 	<div class="menu-mobile">
 		<div class="menu-mobile__wrap-close menu-mobile--close"></div>
@@ -1413,6 +1394,33 @@
         menu: '#navigation',
         navigation:true,
         showActiveTooltip: true,
+        onLeave: function(origin, destination, direction){
+          console.log('onLeave', origin, destination , direction );
+        },
+        afterLoad: function(origin, destination, direction){
+          console.log('afterLoad', origin, destination , direction );
+          if(destination === 8) {
+            check();
+          }
+        },
+        afterRender: function(){
+          console.log('afterRender');
+        },
+        afterResize: function(width, height){
+          console.log('afterResize', width, height);
+        },
+        afterReBuild: function(){
+          console.log('afterReBuild');
+        },
+        afterResponsive: function(isResponsive){
+          console.log('afterResponsive', isResponsive);
+        },
+        afterSlideLoad: function(section, origin, destination, direction){
+          console.log('afterSlideLoad', section, origin, destination, direction);
+        },
+        onSlideLeave: function(section, origin, destination, direction){
+          console.log('onSlideLeave', section, origin, destination, direction);
+        }
       });
     }
   });

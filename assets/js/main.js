@@ -165,3 +165,26 @@ function initalCheckHeaderClass(){
     }
 }
 initalCheckHeaderClass();
+
+
+/**
+ * @footer scroll event
+ */
+
+function check() {
+  console.log('called function');
+  // fullpage_api.destroy('all');
+
+}
+
+(function() {
+
+  function myFunction() {
+    console.log('scrolled');
+  }
+
+  window.addEventListener("scroll", myFunction);
+
+
+})();
+

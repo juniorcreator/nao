@@ -706,69 +706,33 @@ section {
   background: url(../img/sl7/2-layers.png) 0 100%/auto repeat-y,
   url(../img/sl7/2-layers2.png) 100% 100%/auto repeat-y;
   .center-wrap {
-    align-items: flex-start;
+    align-items: flex-start !important;
     padding-top: 197px;
   }
   @include md_1000 {
     background: url(../img/sl7/2-layers.png) 0 100%/auto 320px repeat-y,
     url(../img/sl7/2-layers2.png) 100% 100%/auto 320px repeat-y;
+    .center-wrap {
+      align-items: flex-start;
+    }
   }
   @include sm_769 {
 
   }
+  @include xs_540 {
+    .center-wrap {
+      padding: 0 25px 0 !important;
+    }
+  }
 }
 
 .links {
+  width: 100%;
+  padding-top: 57px;
   &__wrap {
+    max-width: 580px;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  &__row {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    a{
-      &:first-child {
-        margin-right: 9.8%;
-      }
-      &:nth-child(2) {
-        margin-right: 15px;
-      }
-      &:last-child {
-        margin-left: auto;
-      }
-    }
-  }
-  &__side-left {
-    width: 100%;
-    //max-width: 687px;
-    //width: 59%;
-    //margin-right: 20%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  &__side-right {
-    display: flex;
-    flex-direction: column;
-    //.links__item {
-    //  padding-bottom: 31.335789%;
-    //}
-  }
-  &__side-mid {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: -5px;
-    a {
-      &:first-child {
-        margin-right: 38px;
-      }
-      img {
-        max-width: 100%;
-      }
-    }
+    margin: 0 auto;
   }
   &__title {
     color: $color_black;
@@ -779,50 +743,31 @@ section {
     margin-bottom: 54px;
   }
   &__item {
-    display: inline-block;
+    display: block;
     position: relative;
-    margin-bottom: 63px;
-    width: 23.99%;
-    //padding-bottom: 10.935789%;
-    //max-width: 285px;
-    //width: 100%;
+    margin-bottom: 22px;
+    width: 100%;
+    cursor: pointer;
+    padding-bottom: 26.6%;
     img {
-      //position: absolute;
-      //left: 0;
-      //top: 0;
-      //width: 100%;
-      //height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
       max-width: 100%;
       object-fit: contain;
-    }
-    &:nth-child(3n+0) {
-      //margin-right: 9.8%;
-      margin-left: auto;
-    }
-    &:nth-child(3n+1) {
-      margin-right: 9.8%;
     }
   }
   @include md_900{
     padding-bottom: 40px;
     &__item {
-      margin-bottom: 33px;
-      width: calc((100% - 50px) / 2);
-      &:nth-child(3n+1) {
-        margin-right: 0;
-      }
-      &:nth-child(3n+0) {
-        margin-left: 0;
-      }
     }
   }
   @include sm_769 {
     &__side-mid {
       flex-direction: column;
       align-items: center;
-      a:first-child {
-        margin-right: 0;
-      }
       a {
         margin-bottom: 20px;
       }
@@ -830,12 +775,6 @@ section {
   }
   @include xs_540 {
     &__item {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-    &__side-left {
-      max-width: 284px;
-      margin: 0 auto;
     }
     &__title {
       font-size: 23px;
@@ -1162,7 +1101,7 @@ section {
   }
   .s-history {
     .center-wrap {
-      align-items: flex-start;
+      align-items: flex-start !important;
       padding-top: 120px;
     }
   }
