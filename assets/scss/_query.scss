@@ -376,6 +376,11 @@
 
 }
 @media (max-width: 767.98px) {
+  .main-screen {
+    .main-screen__slide {
+      padding-top: 50px;
+    }
+  }
   .governor-appeal.s-news {
     .center-wrap {
       padding-top: 25px;
