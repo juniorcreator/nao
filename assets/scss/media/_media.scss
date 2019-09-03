@@ -37,3 +37,7 @@
 @mixin xs_320 {
   @media (max-width: 320px) { @content; }
 }
+
+@mixin w_1400_h850 {
+  @media (max-width: 1400px) and (max-height: 850px) { @content; }
+}

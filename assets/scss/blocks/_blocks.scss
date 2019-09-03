@@ -72,6 +72,7 @@
     position: absolute;
     z-index: 1000;
     bottom: 50px;
+    pointer-events: none;
     .new-index__list {
       display: flex;
       justify-content: space-between;
@@ -203,6 +204,7 @@
   max-width: 787px;
   margin-left: auto;
   margin-bottom: 79px;
+  width: 100%;
   .btn {
     margin-right: 16px;
     &:last-child {
@@ -225,6 +227,8 @@
   }
   @include sm_769 {
     max-width: initial;
+    justify-content: center;
+    align-items: center;
   }
   @include xs_540 {
     .btn {
@@ -245,5 +249,11 @@
     font-weight: 500;
     margin-left: 16px;
     margin-bottom: 5px;
+  }
+  @include sm_769 {
+    padding-left: 15px;
+  }
+  @include xs_480 {
+    padding-left: 0;
   }
 }

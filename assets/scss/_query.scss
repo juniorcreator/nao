@@ -52,7 +52,8 @@
     }
 
     .main-screen__footer {
-      bottom: 20px;
+      //bottom: 20px;
+      bottom: -145px;
 
       .main-screen__btn {
         padding: 10px 20px;
@@ -375,6 +376,11 @@
 
 }
 @media (max-width: 767.98px) {
+  .main-screen {
+    .main-screen__slide {
+      padding-top: 50px;
+    }
+  }
   .governor-appeal.s-news {
     .center-wrap {
       padding-top: 25px;
