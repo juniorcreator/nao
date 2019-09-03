@@ -174,7 +174,7 @@ initalCheckHeaderClass();
 function check() {
   console.log('called function');
   // fullpage_api.destroy('all');
-
+  // $.fn.fullpage.destroy();
 }
 
 (function() {
