@@ -112,4 +112,8 @@
       text-align: center;
     }
   }
+  @include h850 {
+    zoom: 0.9;
+    margin: 10px auto 70px auto;
+  }
 }
