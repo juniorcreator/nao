@@ -798,6 +798,12 @@ section {
       font-size: 21px;
     }
   }
+  @include h800 {
+    padding-top: 5px;
+    &__item {
+      padding-bottom: 23.6%;
+    }
+  }
 }
 
 //s-info

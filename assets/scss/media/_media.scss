@@ -44,6 +44,9 @@
 @mixin h850 {
   @media (max-height: 850px) { @content; }
 }
+@mixin h800 {
+  @media (max-height: 800px) { @content; }
+}
 @mixin h750 {
   @media (max-height: 750px) { @content; }
 }
