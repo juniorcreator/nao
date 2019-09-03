@@ -50,7 +50,8 @@
     font-weight: 700;
   }
   @include md_1190 {
-      justify-content: space-between;
+    justify-content: space-between;
+    padding-bottom: 20px;
       &__item {
         img {
           max-width: 100%;
@@ -108,6 +109,7 @@
     }
     p, &__text {
       padding: 0;
+      text-align: center;
     }
   }
 }
